@@ -5,7 +5,7 @@ public class Lab1_2
 	public static void mainM()
 	{
 		String word = insert();
-		if (check(word))
+		if (check(word)==0)
 			System.out.println("It's a palindrome");
 		else 
 			System.out.println("It's not a palindrome");
@@ -19,16 +19,10 @@ public class Lab1_2
 		return word;
 	}
 	
-	public static boolean check(String word)
+	public static int check(String word)
 	{
-		char[] charArr = word.toCharArray();
-		int wordLength = word.length();
-		for (int i = 0; i<wordLength; i++)
-		{
-			if (charArr[i]!=charArr[wordLength-1-i])
-				return false;
-		}
-		return true;
+		String wordR = new StringBuilder(word).reverse().toString();
+		return word.compareTo(wordR);
 	}
 
 }

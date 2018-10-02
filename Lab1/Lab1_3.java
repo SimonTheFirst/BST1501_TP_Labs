@@ -23,6 +23,8 @@ public class Lab1_3
 				Lab1_2 lab1_2 = new Lab1_2();
 				lab1_2.mainM();
 				break;
+			default:
+				System.out.println("Not a viable option");
 		}
 		
 	}
