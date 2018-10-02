@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Lab1_2
 {
 	
-	public static void mainM()
+	public static void run()
 	{
 		String word = insert();
 		if (check(word)==0)

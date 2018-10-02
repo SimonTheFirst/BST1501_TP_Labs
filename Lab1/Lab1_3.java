@@ -6,6 +6,7 @@ public class Lab1_3
 		work();
 	}
 	
+	/**Reads an integer from console and runs a selected subprogramm*/
 	public static void work()
 	{
 		System.out.println("What action do you want?:");
@@ -17,11 +18,11 @@ public class Lab1_3
 		{
 			case 1:
 				Lab1_1 lab1_1 = new Lab1_1();
-				lab1_1.mainM();
+				lab1_1.run();
 				break;
 			case 2:
 				Lab1_2 lab1_2 = new Lab1_2();
-				lab1_2.mainM();
+				lab1_2.run();
 				break;
 			default:
 				System.out.println("Not a viable option");
