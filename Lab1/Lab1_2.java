@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Lab1_2
 {
-	
+	/**Outputs the result based on the return value of check() */
 	public static void run()
 	{
 		String word = insert();
@@ -11,6 +11,7 @@ public class Lab1_2
 			System.out.println("It's not a palindrome");
 	}
 	
+	/**Reads a string from console*/
 	public static String insert()
 	{
 		Scanner scan = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class Lab1_2
 		return word;
 	}
 	
+	/**Checks whether a word is a palindrome or not*/
 	public static int check(String word)
 	{
 		String wordR = new StringBuilder(word).reverse().toString();
