@@ -16,6 +16,13 @@ public class Point3d
 		this.coordZ = z;
 	}
 
+	public Point3d(String[] coordMas)
+	{
+		this.coordX = Double.parseDouble(coordMas[0]);
+		this.coordY = Double.parseDouble(coordMas[1]);
+		this.coordZ = Double.parseDouble(coordMas[2]);
+	}
+
 	public void setX (double x)
 	{
 		this.coordX = x;
@@ -46,6 +53,7 @@ public class Point3d
 		return this.coordZ;
 	}
 
+	/**Compares 2 points*/
 	public boolean compareTo(Point3d point)
 	{
 		if (this.coordX == point.getX() && this.coordY == point.getY() && this.coordZ == point.getZ())
@@ -53,6 +61,7 @@ public class Point3d
 		return false;
 	}
 
+	/**Computes distance between 2 points */
 	public double distanceTo(Point3d point)	
 	{
 		return Math.sqrt(Math.pow(point.getX() - this.coordX , 2.0) + Math.pow(point.getY() - this.coordY ,2.0) + 
